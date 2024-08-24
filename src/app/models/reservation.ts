@@ -5,4 +5,5 @@ export interface Reservation {
     guestName: string,
     guestEmail: string,
     roomNumber: number
+    noOfGuest : number
 }

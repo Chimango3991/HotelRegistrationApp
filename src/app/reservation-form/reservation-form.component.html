@@ -41,11 +41,19 @@
     </div>
 
     <div class="row mb-3">
-        <div class="col-3">
+        <div class="col">
             <label class="form-label">Room Number:</label>
             <input class="form-control" type="number" formControlName="roomNumber">
             <small class="text-danger" *ngIf="reservationForm.get('roomNumber')?.invalid && reservationForm.get('roomNumber')?.touched">
                 Room Number is required.
+            </small>
+        </div>
+    
+        <div class="col">
+            <label class="form-label">No. of Guest:</label>
+            <input class="form-control" type="number" formControlName="noOfGuest">
+            <small class="text-danger" *ngIf="reservationForm.get('noOfGuest')?.invalid && reservationForm.get('noOfGuest')?.touched">
+                No. of guest are required.
             </small>
         </div>
     </div>
